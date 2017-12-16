@@ -1,0 +1,71 @@
+section .container {
+    display: block;
+}
+
+section .container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #404040;
+    margin-top: 9rem;
+}
+
+section .container label,
+input {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+section .container label {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    position: relative;
+    left: 17rem;
+}
+
+section .container label:nth-of-type(1) {
+    margin-top: 4rem;
+}
+
+section .container input {
+    box-shadow: 0 0 3px darkgray inset;
+    border-radius: 4px;
+    width: 35rem;
+    height: 2.8rem;
+    font-size: 1.05rem;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+section .container input[type=password] {
+    font-family: sans-serif;
+}
+
+section .container input[type=password]::placeholder {
+    font-family: 'nanumsquare';
+}
+
+section .container #loginBtn {
+    width: 35rem;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #15c2c8;
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 1.3rem;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer .container span {
+    color: #b9b9b9;
+}
