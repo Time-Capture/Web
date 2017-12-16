@@ -15,14 +15,21 @@
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
         
-        <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">  
+        <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
         <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         
         <style type="text/css">
+            /*@font-face {
+                font-family: 'jua';
+                src: url('../jua.ttf') format('truetype');
+            }*/
+            
             html, body{
                 margin:0;
                 padding:0;
+                overflow:hidden;
             }
             
             *{
@@ -31,19 +38,222 @@
                 border:0;
                 outline:none;
                 box-sizing:border-box;
+                
+                font-family: 'nanumsquare', sans-serif;
+            }
+            
+            #app{
+                width:100%;
+                height:100%;
+            }
+            
+            header{
+                height:4rem;
+            }
+            
+            section{
+                height:calc(100vh - 10rem);
+                background-color:#F9F9F9;
+            }
+            
+            footer{
+                width:100%;
+                height:6rem;
+                position:absolute;
+                bottom:0;
+            }
+            
+            .container{
+                width:1080px;
+                height:100%;
+                margin:0 auto;
+                
+                display:flex;
+                align-items: center;
+            }
+            
+            header .container #logo{
+                width:3rem;
+            }
+            
+            header .container #logoText{
+                font-family: 'poiret one';
+                font-weight:bold;
+                font-size:1.45rem;
+                letter-spacing: 1px;
+                padding-left:0.5rem;
+                color:#14c1c7;
+            }
+            
+            header .container nav ul{
+                margin-left:27rem;
+            }
+            
+            header .container nav ul li{
+                list-style: none;
+                display:inline-block;
+                margin-left:2.5rem;
+            }
+            
+            header .container nav ul li a{
+                text-decoration: none;
+                font-size:1.05rem;
+                color:#606060;
+                transition:0.5s;
+            }
+            
+            header .container nav ul li a:hover{
+                letter-spacing: 2px;
+            }
+            
+            /* section start */
+            section .container #subBox{
+                position:absolute;
+                width:100%;
+                height:5rem;
+                background:linear-gradient(to right, #15c2c8, #23cccb);
+                left:0;
+                bottom:6rem;
+                
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            section .container #subBox span{
+                color:white;
+                font-size:1.2rem;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                word-spacing: 2px;
+                text-shadow: 1px 2px 1px rgba(0,0,0,0.1);
+            }
+            
+            section .container #subBox img{
+                width:1.7rem;
+                margin-left:1rem;
+                cursor:pointer;
+                transition:0.5s;
+            }
+            
+            section .container #subBox img:hover{
+                transform:scale(1.25);
+            }
+            
+            section .container .infos{
+                width:50%;
+                height:100%;
+            }
+            
+            section .container .infos#introTexts{
+                float:left;
+            }
+            
+            section .container #introTexts h1{
+                color:#606060;
+                font-weight: 400;
+                font-size:35px;
+                line-height: 1.3;
+                margin-top:15.5rem;
+            }
+            
+            section .container #introTexts h1 span{
+                color:#14c1c7;
+                font-weight: 600;
+            }
+            
+            section .container #introTexts p{
+                font-size:1.05rem;
+                font-weight:500;
+                color:#424242;
+                line-height: 1.5;
+                margin-top:2.5rem;
+            }
+            
+            section .container .infos#introImgs{
+                float:right;
+            }
+            
+            /* footer start */
+            
+            footer .container{
+                justify-content: center;
+            }
+            
+            footer .container span{
+                font-size:0.95rem;
+                color:#424242;
+                line-height: 1.5;
+            }
+            
+            footer .container a img{
+                width:1.2rem;
+                margin-right:0.6rem;
+                cursor: pointer;
+            }
+            
+            footer .container a:nth-of-type(1) img{
+                margin-left:37rem;
             }
         </style>
     </head>
     <body>
-        <div id="app">
+        <div id= "app">
             <header>
-                
+                <div class= "container">
+                    <img src= "../imgs/logo.png" alt= "logo" id= "logo">
+                    <span id= "logoText">Time-Capture</span>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href= "">서비스 소개</a></li>
+                            <li><a href= "">로그인</a></li>
+                            <li><a href= "">회원가입</a></li>
+                            <li><a href= "">마이페이지</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
+            
             <section>
-                
+                <div class="container">
+                    <div class= "infos" id= "introTexts">
+                        <h1>
+                            다시 그 때로
+                            <br>
+                            <span>추억을 회상하다, 타임캡쳐</span>
+                        </h1>
+                        <p>
+                            잊지 못할 추억을 만들고 싶으신가요?<br>
+                            타임캡쳐를 사용해보세요!<br>
+                            타임캡쳐는 여러 사람들과 사진을 통해 소중한 추억을<br>
+                            만들 수 있게 도와주는 어플입니다!
+                        </p>
+                    </div>
+                    <div class= "infos" id= "introImgs">
+                        
+                    </div>
+                    <div id= "subBox">
+                        <span id= "howtoText">사용방법 알아보기</span>
+                        <img src= "../imgs/right-arrow.png" alt= "rightArrow" id= "rightArrow">
+                    </div>
+                </div>
             </section>
+            
             <footer>
-                
+                <div class="container">
+                    <span>
+                        Copyright &copy; 2017-12-16
+                        <br>
+                        Time-Capture All Rights Reserved.
+                    </span>
+                    <a href= "" target="_blank">
+                        <img src= "../imgs/fb.png" alt= "fb" id= "fb">
+                    </a>
+                    <a href= "" target="_blank">
+                        <img src= "../imgs/git.png" alt= "git" id= "git">
+                    </a>
+                </div>
             </footer>
         </div>
     </body>
