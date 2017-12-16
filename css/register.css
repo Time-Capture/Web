@@ -47,7 +47,7 @@ section .container input[type=password]::placeholder {
     font-family: 'nanumsquare';
 }
 
-section .container #loginBtn {
+section .container .registerBtns {
     width: 35rem;
     height: 4rem;
     margin: 0 auto;

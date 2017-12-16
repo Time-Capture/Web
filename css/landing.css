@@ -119,6 +119,7 @@ section .container .screen .screenText {
     display: inline;
     box-sizing: content-box;
     padding: 0.5rem;
+    padding-right:0.2rem;
     position: relative;
     top: 6rem;
 }

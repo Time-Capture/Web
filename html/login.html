@@ -51,7 +51,7 @@
                     <label for= "pwdForm">비밀번호</label>
                     <input type="password" placeholder="비밀번호를 입력해주세요." id="pwdForm">
                     
-                    <div id="loginBtn">
+                    <div class= "registerBtns" id="loginBtn">
                         로그인
                     </div>
                 </div>
@@ -73,6 +73,30 @@
                 </div>
             </footer>
         </div>
+        
+        <script type="text/javascript">
+            let btn = document.getElementById('loginBtn');
+            let inputs = document.querySelectorAll('input');
+            
+            btn.onclick = (e) => {
+                e.preventDefault();
+                $.ajax({
+                    url : "http://52.14.74.219:9024/api/signin",
+                    type : 'POST',
+                    data : {
+                        id : inputs[0].value,
+                        password : inputs[1].value
+                    },
+                    success : function(data){
+                        //alert(data);
+                        window.location.href = "landing.html";
+                    },
+                    error : function(data){
+                        console.log(data);
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
 
