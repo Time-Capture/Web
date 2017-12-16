@@ -1,3 +1,4 @@
+
 section .container #subBox {
     position: absolute;
     width: 100%;
@@ -149,4 +150,11 @@ section .container .phone .mainBtn {
     box-shadow: 0 1px 3px darkgray inset;
     margin: 0 auto;
     margin-top: 1.1rem;
+}
+
+#successUser{
+    position:absolute;
+    top:1.3rem;
+    right:2rem;
+    font-size:1.1rem;
 }

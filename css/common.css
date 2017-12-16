@@ -65,7 +65,7 @@ header .container nav ul {
 header .container nav ul li {
     list-style: none;
     display: inline-block;
-    margin-left: 2.5rem;
+    margin-left: 2.25rem;
 }
 
 header .container nav ul li a {

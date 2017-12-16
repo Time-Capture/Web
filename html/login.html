@@ -89,7 +89,12 @@
                     },
                     success : function(data){
                         //alert(data);
-                        window.location.href = "landing.html";
+                        if(data){
+                            localStorage.setItem("token", data.token);
+                            window.location = "landing.html";
+                        }else{
+                            console.log("Error" + "\n" + data);
+                        }
                     },
                     error : function(data){
                         console.log(data);

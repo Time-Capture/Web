@@ -116,6 +116,9 @@
                         //dataType : 'json',
                         success : function(data, text){
                             alert("회원가입에 성공하셨습니다.");
+                            
+                            localStorage.setItem("key", inputs[0].value);
+                            
                             window.location.href = "login.html";
                         },
                         error : function(data, data2, data3){
