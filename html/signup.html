@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Time-Capture</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="WCE팀 정윤재">
+        <meta name="description" content="학교 친구들과 찍었던 사진들을 추억으로 남길 수 있게 만드는 웹/앱 서비스">
+        <meta name="keywords" content="추억, 친구, 사진, 학교">
+        <meta name="Other Agent" content="Time-Capture">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        
+        <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+        
+        <link href="../css/common.css" type="text/css" rel="stylesheet">
+        <link href="../css/register.css" type="text/css" rel="stylesheet">
+        <link href="../css/signup.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id= "app">
+            <header>
+                <div class= "container">
+                    <img src= "../imgs/logo.png" alt= "logo" id= "logo">
+                    <span id= "logoText">Time-Capture</span>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href= "landing.html">서비스 소개</a></li>
+                            <li><a href= "#">로그인</a></li>
+                            <li><a href= "signup.html">회원가입</a></li>
+                            <li><a href= "mypage.html">마이페이지</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <section>
+                <div class="container">
+                    <h1>회원가입</h1>
+                    
+                    <label for= "nameForm">이름</label>
+                    <input type="text" placeholder="이름을 입력해주세요." id="nameForm">
+                    
+                    <label for= "idForm">아이디</label>
+                    <input type="text" placeholder="아이디를 입력해주세요." id="idForm">
+                    
+                    <label for= "pwdForm">비밀번호</label>
+                    <input type="password" placeholder="비밀번호를 입력해주세요." id="pwdForm">
+                    
+                    <label for= "pwdCheck">비밀번호 확인</label>
+                    <input type="password" placeholder="비밀번호를 재입력해주세요." id="pwdCheck">
+                    
+                    <div id="loginBtn">
+                        로그인
+                    </div>
+                </div>
+            </section>
+            
+            <footer>
+                <div class="container">
+                    <span>
+                        Copyright &copy; 2017-12-16
+                        <br>
+                        Time-Capture All Rights Reserved.
+                    </span>
+                    <a href= "" target="_blank">
+                        <img src= "../imgs/fb2.png" alt= "fb" id= "fb">
+                    </a>
+                    <a href= "" target="_blank">
+                        <img src= "../imgs/git2.png" alt= "git" id= "git">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
